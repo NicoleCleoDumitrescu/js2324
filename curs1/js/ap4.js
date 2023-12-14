@@ -1,0 +1,1 @@
+alert('Mesaje afisat  de fisier extern')
