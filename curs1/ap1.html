@@ -8,11 +8,26 @@
     <script>
         alert(5678)
     </script>
+</head>
 <body onload="alert(1234)">
     <h1>Primul cod de JavaScript</h1>
     <script>
-        // alert('La final');
+        alert('La final');
     </script>
+
+    <!-- Utilizare atribut de tip HTML EVENTS  atributul: onblur="" -->
+    Enter your name:
+	<input type="text" name="fname" id ="fname"
+	onblur="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to uppercase.</p>
+<script>
+function myFunction() {
+let x =document.getElementById("fname");
+x.value = x.value.toUpperCase();
+}
+</script>
+
 
 </body>
 </html>

@@ -1,1 +1,1 @@
-alert('Mesaje afisat  de fisier extern')
+alert('Mesaj afisat din fisier extern')

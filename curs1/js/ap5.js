@@ -1,1 +1,1 @@
-alert('Javascript este activat')
+alert('JavaScript este activat!')

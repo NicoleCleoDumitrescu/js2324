@@ -7,15 +7,33 @@
 </head>
 <body>
    <script>
-    let a = + prompt("Primul numar este?", 2);
-    let b = + prompt("Al 2-lea numar este?", 3);
-  console.log(typeof a);
-  console.log(typeof b);
-// Metoda corecta 1
-// let a = + prompt("Primul numar este?", 2);
-//     let b = + prompt("Al 2-lea numar este?", 3);
+    let a = prompt("Primul numar este?", 2);
+    let b = prompt("Al 2-lea numar este?", 3);
+    alert('Suma numerelor este?',a+b);
+console.log(typeof a);
+console.log(typeof b);
+// // Metoda corecta 1
+// let a = + prompt("Primul numar este?", 2);   
+// -----Plusul din fata se numeste operatiune de CAST, adica transforma stringurile in numere!
+// let b = + prompt("Al 2-lea numar este?", 3);
+// alert("Suma numerelor este: " + (a+b));
   
-    alert("Suma numerelor este:", +(a+b))
+    alert("Suma numerelor este: " + (Number(a)+Number(b)))
+    console.log('suma numerelor este',a+b)
+
+    console.log(Number(a) +Number(b));
+
+    window.alert("Bine ai venit la Link Academy");
+    window.prompt("Scrieti numele", "Nume");
+    
+    intrebare = window.confirm("Rezultatul lui 1+1 este 2?");
+        if (intrebare) {
+        alert("Corect");
+        }
+        else {
+        alert("Incorect"); 
+        }
+                        
    </script> 
 </body>
 </html>
