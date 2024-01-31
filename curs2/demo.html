@@ -2,16 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
 <body>
-  <script>
+  <!-- <script>
    carName = "Volvo"
    var carName = "BMW"
 console.log(carName); // BMW
 // let x="5" +2 +3
+console.log(15 << 3);
+console.log(15 >> 2);
+</script>   -->
 
-  </script>  
+
+<h1>JavaScript Global Methods</h1>
+<h2>The eval() Method</h2>
+
+<p id="demo"></p>
+
+<script> 
+let x = 10;
+let y = 20;
+let text = "x * y";
+let result = eval(text);
+
+document.getElementById("demo").innerHTML = result;
+
+</script>
 </body>
 </html>

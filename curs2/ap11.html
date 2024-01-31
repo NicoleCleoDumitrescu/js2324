@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Afișarea numerele impare până la un număr n citit de la tastatură.
+    </title>
+  </head>
+  <body>
+    <script>
+
+              //  Varianta 1- utilizand bucla for:
+
+      //   let n = prompt('numărul n este', 6)
+      //   let i;
+
+      //         //Convert input to a number:
+      //         n = parseInt(n);
+
+      //   //Check if the input is a valid number:
+      //       if (isNaN(n) || n < 0) {
+      //     document.write("Va rugam introduceti un numar pozitiv valid!");
+      //       } else {
+      //           for(i=1; i <= n; i+=2){
+      //           console.log(i)
+      //   }
+      //       }
+
+           // Varianta 2- utilizand comanda while:
+            let n = prompt('Introduceti un numar n :')
+
+                // Converteste inputul la un număr întreg
+             n=parseInt(n);
+                // Verifică dacă inputul este un număr valid
+             if(isNaN(n)){
+                console.log("Vă rugăm să introduceți un număr valid");
+            }else{
+               console.log('Numerele impare pana la '  + n +  ' sunt: ') ;
+
+                    // Afișează numerele impare folosind o buclă while
+                  let i = 1;
+                  while (i <= n){
+                      console.log(i);
+                      i += 2;
+                  }
+
+                }
+    </script>
+  </body>
+</html>

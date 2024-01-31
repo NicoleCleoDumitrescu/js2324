@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt("Numărul n este:", 10);
+      let nr;
+      let min = 999;
+      let max = 0;
+
+      // Convert input to a number:
+      n = parseInt(n);
+
+      // Check if the input is a valid number:
+      if (isNaN(n)) {
+        console.log("Introduceti un numar valid.");
+      } else {
+        for (let i = 1; i <= n; i++) {
+          nr = prompt("Introduceti numarul:");
+
+          // Convert input to a number
+          nr = parseInt(nr);
+
+          // Check if the input is a valid number
+          if (isNaN(nr)) {
+            console.log("Introduceti un numar valid and refresh the application.");
+            break; // Exit the loop if an invalid number is entered
+          }
+
+          if (nr > max) {
+            max = nr;
+          }
+
+          if (nr < min) {
+            min = nr;
+          }
+        }
+    }
+        console.log("Maximul este", max);
+        console.log("Minimul este", min);
+     
+    </script>
+  </body>
+</html>

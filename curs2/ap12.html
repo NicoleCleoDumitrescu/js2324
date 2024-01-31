@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Afișarea numerelor mai mici decât un numărul n citit de la tastatură.
+    </title>
+  </head>
+  <body>
+    <script>
+      let n = prompt('Numărul n este');
+      // Converteste inputul la un număr întreg
+       n = parseInt(n)
+
+       // Verifică dacă inputul este un număr valid
+       if(isNaN(n) || n<0){
+         
+        console.log("Introduceti un numar pozitiv valid!");
+        } else {
+         console.log("Numerele mai mici decât " + n + " sunt:");
+        // Afișează numerele mai mici decât n folosind o buclă do...while:
+         let i = 0;
+         do{
+          console.log(i);
+          i++;
+          } while(i < n);
+       }
+    </script>
+  </body>
+</html>

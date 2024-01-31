@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>
+      Sumele primelor "n" numere PARE si cea a tuturor celor n numere
+      identificate, sunt:
+    </h2>
+    <script>
+      // Get user input for 'n'
+      let n = prompt("Introduceti o valoare pentru 'n':", 5);
+      
+      //Convert input to a number:
+       n = parseInt(n);
+
+      //Check if the input is a valid number:
+      if (isNaN(n) || n < 0) {
+        document.write("Va rugam introduceti un numar pozitiv valid!");
+      } else {
+        //Initializarea sumei
+        let sumaPare = 0;
+        let sumaToate = 0;
+
+        for (let i = 1; i <= n; i++) {
+          sumaToate += i;
+          //verific daca i-ul este un numar par, deci este respectata cerinta!!!!
+          if (i % 2 === 0) {
+            // suma = suma +i
+            sumaPare += i;
+          }
+        }
+     
+        //Display results: pe pagina web si in consola:
+
+        document.write("Suma numerelor pare pana la " + n + " este: " + sumaPare);  
+
+        document.write("Suma tuturor numerelor pozitive pana la " + n + " este: " +sumaToate);
+       
+
+        console.log("Suma numerelor pare pana la " + n + " este: "  + sumaPare);  
+        console.log('Suma tuturor numerelor pozitive pana la ' + n +  ' este:' + sumaToate);
+      }
+
+    </script>
+  </body>
+</html>

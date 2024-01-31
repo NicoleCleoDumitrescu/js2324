@@ -7,33 +7,52 @@
 </head>
 <body>
    <script>
-    let a = prompt("Primul numar este?", 2);
-    let b = prompt("Al 2-lea numar este?", 3);
-    alert('Suma numerelor este?',a+b);
-console.log(typeof a);
-console.log(typeof b);
-// // Metoda corecta 1
-// let a = + prompt("Primul numar este?", 2);   
+//     let a = prompt("Primul numar este?", 2);
+//     let b = prompt("Al 2-lea numar este?", 3);
+// //     alert('Suma numerelor este: ' +(a+b));
+// //     console.log(a+b);
+
+// console.log(typeof a);
+// console.log(typeof b);
+// Metoda corecta 1
+let a = + prompt("Primul numar este?", 2);   
 // -----Plusul din fata se numeste operatiune de CAST, adica transforma stringurile in numere!
-// let b = + prompt("Al 2-lea numar este?", 3);
-// alert("Suma numerelor este: " + (a+b));
+let b = + prompt("Al 2-lea numar este?", 3);
+alert("Suma numerelor este: "  + (a+b));
   
     alert("Suma numerelor este: " + (Number(a)+Number(b)))
     console.log('suma numerelor este',a+b)
 
     console.log(Number(a) +Number(b));
 
-    window.alert("Bine ai venit la Link Academy");
-    window.prompt("Scrieti numele", "Nume");
+    // window.alert("Bine ai venit la Link Academy");
+    // window.prompt("Scrieti numele", "Nume");
     
-    intrebare = window.confirm("Rezultatul lui 1+1 este 2?");
-        if (intrebare) {
-        alert("Corect");
-        }
-        else {
-        alert("Incorect"); 
-        }
-                        
+    // intrebare = window.confirm("Rezultatul lui 1+1 este 2?");
+    //     if (intrebare) {
+    //     alert("Corect");
+    //     }
+    //     else {
+    //     alert("Incorect"); 
+    //     }
+                    
+    //     console.log(15 << 3);
+    //   console.log(15 >> 2);
+      
+    //   let value = true;
+    //   alert(typeof value);
+    //   console.log('23' >23 || 1==1);
+    //   alert(Boolean("salut"));
+    //   myNr = 25;
+    //   console.log('numerul meu este', 25);
+    //   myStr = String(myNr);
+
+    //   console.log(typeof myStr);
+
+      const quantity = "12";
+      console.log(typeof(Number(quantity)));
+      console.log(typeof(quantity));
+
    </script> 
 </body>
 </html>

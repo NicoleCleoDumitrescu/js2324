@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document_changing swith instruction with if else</title>
+  </head>
+  <body>
+    <script>
+      let d = new Date();
+      let theDay = 14 //d.getDay();
+
+      if (theDay === 1) {
+        document.write("<b>Luni</b>");
+      } else if (theDay === 2) {
+        document.write("<b>Marti</b>");
+      } else if (theDay === 3) {
+        document.write("<b>Miercuri</b>");
+      } else if (theDay === 4) {
+        document.write("<b>Joi</b>");
+      } else if (theDay === 5) {
+        document.write("<b>Vineri</b>");
+      } else if (theDay === 6) {
+        document.write("<b>Sâmbătă</b>");
+      } else if (theDay === 0) {
+        document.write("<b>Duminică</b>");
+      } else {
+        document.write("<b>Saptamana are doar 7 zile!</b>");
+      }
+    </script>
+  </body>
+</html>
