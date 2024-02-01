@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even Lines of Isosceles Triangle</title>
+    <style>
+      /* Optional styling for better visualization */
+      pre {
+        font-family: monospace;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container element to display the triangle -->
+    <div id="triangle-container"></div>
+
+    <script>
+      let height = 10;
+      let base = 9;
+
+      // Create a variable to store the HTML content
+      let triangleHTML = "";
+
+      for (let i = 1; i <= height; i +=2) {
+        let line = "";
+
+        // Calculate the number of spaces before the first asterisk
+        let spacesBefore = height - i;
+
+        // Add spaces before the first asterisk
+        for (let j = 0; j < spacesBefore; j++) {
+          line += " ";
+        }
+
+        // Calculate the number of asterisks on this line
+        let asterisksCount = 2 * i - 1 ;
+
+        // Add asterisks
+        for (let j = 0; j < asterisksCount; j++) {
+          line += "*";
+        }
+
+        // Add the line to the HTML content
+        triangleHTML += line + "<br>";
+      }
+
+      // Display the HTML content in the document
+      document.getElementById("triangle-container").innerHTML =
+        "<pre>" + triangleHTML + "</pre>";
+    </script>
+  </body>
+</html>
